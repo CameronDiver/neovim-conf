@@ -41,3 +41,6 @@ map('n', '<leader>bd', "<cmd>lua require('mini.bufremove').delete()<cr>")
 
 -- Lazygit
 map('n', '<leader>gg', "<cmd>LazyGit<cr>")
+
+map('n', 'H', ":bp<cr>")
+map('n', 'L', ":bn<cr>")
