@@ -36,10 +36,10 @@ autocmd('BufLeave', {
   command = 'stopinsert'
 })
 
-autocmd('VimEnter', {
-	command = "NvimTreeToggle"
-})
-
+-- autocmd('VimEnter', {
+-- 	command = "NvimTreeToggle"
+-- })
+--
 -- Format on save
 autocmd('BufWritePost', {
 	command = "FormatWrite",
