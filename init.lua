@@ -4,6 +4,7 @@ require('core/colours')
 require('core/keymaps')
 require('core/options')
 require('core/languages')
+require('core/wiki')
 
 require('nvim-tree').setup({
 	open_on_setup = true

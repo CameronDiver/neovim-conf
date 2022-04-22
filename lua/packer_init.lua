@@ -69,6 +69,8 @@ return packer.startup(function(use)
 
 	use 'SirVer/ultisnips'
 	use 'quangnguyen30192/cmp-nvim-ultisnips'
+	use 'vimwiki/vimwiki'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
