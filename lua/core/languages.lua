@@ -38,7 +38,8 @@ lsp_installer.on_server_ready(function(server)
 end)
 
 require 'nvim-treesitter.configs'.setup {
-	ensure_installed = "all"
+	ensure_installed = "all",
+	ignore_install = { "php", "phpdoc" }
 }
 
 require('formatter').setup({

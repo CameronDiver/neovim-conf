@@ -71,6 +71,8 @@ return packer.startup(function(use)
 	use 'quangnguyen30192/cmp-nvim-ultisnips'
 	use 'vimwiki/vimwiki'
 
+	use 'Mofiqul/trld.nvim'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
