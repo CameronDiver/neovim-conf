@@ -20,8 +20,6 @@ map('n', '<C-h>', '<C-w>h')
 map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
--- Reload configuration without restart nvim
-map('n', '<leader>r', ':so %<CR>')
 
 -- NvimTree
 map('n', '<leader>e', ':NvimTreeToggle<CR>')            -- open/close
@@ -42,5 +40,23 @@ map('n', '<leader>bd', "<cmd>lua require('mini.bufremove').delete()<cr>")
 -- Lazygit
 map('n', '<leader>gg', "<cmd>LazyGit<cr>")
 
-map('n', 'H', ":bp<cr>")
-map('n', 'L', ":bn<cr>")
+-- Tab bar
+map('n', '<A-Left>', "<cmd>BufferPrevious<cr>")
+map('n', '<A-Right>', "<cmd>BufferNext<cr>")
+map('n', '<A-<>', '<cmd>BufferMovePrevious<CR>')
+map('n', '<A->>', ' <cmd>BufferMoveNext<CR>')
+map('n', '<A-1>', '<cmd>BufferGoto 1<CR>')
+map('n', '<A-2>', '<cmd>BufferGoto 2<CR>')
+map('n', '<A-3>', '<cmd>BufferGoto 3<CR>')
+map('n', '<A-4>', '<cmd>BufferGoto 4<CR>')
+map('n', '<A-5>', '<cmd>BufferGoto 5<CR>')
+map('n', '<A-6>', '<cmd>BufferGoto 6<CR>')
+map('n', '<A-7>', '<cmd>BufferGoto 7<CR>')
+map('n', '<A-8>', '<cmd>BufferGoto 8<CR>')
+map('n', '<A-9>', '<cmd>BufferGoto 9<CR>')
+
+map('n', '<A-q>', "<cmd>BufferClose<CR>")
+map('n', '<A-c>', "<cmd>BufferCloseAllButCurrent<cr>")
+
+-- reloading config
+map('n', '<Leader>r', '<cmd>lua ReloadConfig()<cr>')

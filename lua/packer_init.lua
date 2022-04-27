@@ -70,6 +70,15 @@ return packer.startup(function(use)
 	use 'quangnguyen30192/cmp-nvim-ultisnips'
 	use 'vimwiki/vimwiki'
 
+	use {
+		'romgrk/barbar.nvim',
+		requires = {'kyazdani42/nvim-web-devicons'}
+	}
+
+	use "rcarriga/nvim-notify"
+	use 'nvim-lualine/lualine.nvim'
+
+
 	-- Colour schemes
 	-- use "joshdick/onedark.vim"
 	--	use "jacoborus/tender.vim"

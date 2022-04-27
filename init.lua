@@ -9,14 +9,11 @@ require('core/wiki')
 require('nvim-tree').setup({
 	open_on_setup = true
 })
-require('mini.bufremove').setup()
 require('mini.comment').setup()
 require('mini.cursorword').setup()
 require('mini.indentscope').setup()
 require('mini.jump').setup()
-require('mini.pairs').setup()
 require('mini.starter').setup()
-require('mini.statusline').setup()
 require('mini.surround').setup({
   mappings = {
     add = 'sa', -- Add surrounding
@@ -28,12 +25,13 @@ require('mini.surround').setup({
     update_n_lines = 'sn', -- Update `n_lines`
   },
 })
-require('mini.tabline').setup()
 require('mini.trailspace').setup()
 require('trouble').setup({
 	auto_open = true,
 	auto_close = false
 })
+require('lualine').setup()
+vim.notify = require('notify')
 
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
