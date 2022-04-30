@@ -45,3 +45,8 @@ autocmd('BufWritePost', {
 	command = "FormatWrite",
 	pattern = "*.js,*.ts,*.json,*.tsx,*.jsx"
 })
+
+autocmd('BufWritePre',  {
+	command = 'lua vim.lsp.buf.formatting()',
+	pattern = "*.scala"
+});

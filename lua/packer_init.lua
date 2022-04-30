@@ -65,6 +65,7 @@ return packer.startup(function(use)
 	use "kdheepak/lazygit.nvim"
 	use "hrsh7th/nvim-cmp"
 	use 'hrsh7th/cmp-nvim-lsp'
+	use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
 
 	use 'SirVer/ultisnips'
 	use 'quangnguyen30192/cmp-nvim-ultisnips'
